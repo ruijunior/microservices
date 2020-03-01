@@ -13,7 +13,7 @@ public class FornecedorResource {
 	@Autowired
 	private FornecedorService fornecedorService;
 	
-	@GetMapping("/{estado}")
+	@GetMapping("/info/{estado}")
 	public Fornecedor getPorEstado(@PathVariable String estado) {
 		return this.fornecedorService.getPorEstado(estado);
 	}
